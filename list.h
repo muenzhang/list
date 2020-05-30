@@ -3,10 +3,16 @@
 
 typedef struct node list;
 
+list* listCreate();
+
+int search(list* head,int j);
+
+int len(list* head);
+
 list* get(list *head,int number);
 
-void append(list *head,int val);
+list* append(list *head,int val);
 
-void insert(list *head,int i,int val);
+list* insert(list *head,int i,int val);
 
-void del(list *head,int i);
+int del(list *head,int i);
